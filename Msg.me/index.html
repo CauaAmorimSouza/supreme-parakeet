@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mensagens Personalizadas</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>Descubra a sua mensagem personalizada</h1>
+    <h2>Talvez seja necessário colocar seu Sobrenome ou Apelido</h2>
+    <label for="nome">Digite o seu nome:</label>
+    <input type="text" id="nome">
+    <button id="Botão" onclick="exibirMensagem()">Descobrir</button>
+    <p id="mensagem"></p>
+
+    <script>
+        function exibirMensagem() {
+            const nome = document.getElementById('nome').value.toLowerCase();
+            const mensagem = document.getElementById('mensagem');
+
+            switch (nome) {
+                case 'ruan':
+                    mensagem.textContent = 'Aquele cara que não sabe português';
+                    break;
+                case 'lucas':
+                    mensagem.textContent = 'Esse daí é Skilédi mesmo';
+                    break;
+                case 'diogo':
+                    mensagem.textContent = 'O primeiro e único KaiserBingus';
+                    break;
+                default:
+                    mensagem.textContent = 'Nome não encontrado!';
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

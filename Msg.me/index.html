@@ -5,8 +5,9 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <h1>Descubra a sua mensagem personalizada</h1>
+    <h1>Descubra a sua mensagem personalizada </h1>
     <h2>Talvez seja necessário colocar seu Sobrenome ou Apelido</h2>
+    <h3>(Não utilize assentos ou sobrenomes a menos que seja solicitado)</h3>
     <label for="nome">Digite o seu nome:</label>
     <input type="text" id="nome">
     <button id="Botão" onclick="exibirMensagem()">Descobrir</button>
@@ -18,6 +19,59 @@
             const mensagem = document.getElementById('mensagem');
 
             switch (nome) {
+                case 'jacqueline':
+                    mensagem.textContent = 'Poxa, até você veio? Obrigado por aparecer :D'
+                case 'jane':
+                    mensagem.textContent = 'Ta precisando aparecer mais na call em fia';
+                    break;
+                case 'luiz':
+                mensagem.textContent = 'Maluco tu te lembra que teu nick era wellfes?';
+                break;
+                case 'hiki':
+                    mensagem;textContent = 'Bora jogar um rocket league ae doido, eu sei que eu sou ruim mas vai ter que dar kkk';
+                    break;
+                case 'pepolino':
+                mensagem.textContent = 'Oloko até tu ta aqui? kkkkkkk, vai arrumar o que fazer'
+                case 'pedro':
+                mensagem.textContent = 'Oloko até tu ta aqui? kkkkkkk, vai arrumar o que fazer'
+                break;
+                case 'julia':
+                mensagem.textContent = 'Mas bah né meu não esperava tu por aqui prima'
+                case 'júlia':
+                mensagem.textContent = 'Mas bah né meu não esperava tu por aqui prima';
+                break;
+                case 'roberto':
+                    mensagem.textContent = 'Alguma hora eu ainda vou te pedir carona quando você menos esperar.';
+                    break;
+                case 'cayo':
+                    mensagem.textContent = 'Dae manin, beleza?'
+                    break;
+                case 'pai':
+                mensagem.textContent = 'Seu nome é "pai" por acaso';
+                break;
+                case 'caco':
+                mensagem.textContent = 'Oi pai, tudo bom?'
+                case 'fabian':
+                    mensagem.textContent = 'Oi pai, tudo bom?';
+                break;
+                case 'jonas':
+                    mensagem.textContent = 'Para de jogar genshin man, ta começando a afetar teu cérebro';
+                    break;
+                case 'ana paula':
+                mensagem.textContent = 'Agressão é la na frente!';
+                break;
+                case 'ana':
+                    mensagem.textContent = 'Coloque seu sobrenome junto por favor';
+                    break;
+                case 'isabella':
+                    mensagem.textContent = 'Coloque seu sobrenome junto por favor';
+                    break;
+                case 'isabella matos':
+                mensagem.textContent = 'Eu ficaria muito feliz se algum dia você se batizasse algum dia! (>‿◠)';
+                break;
+                case 'danilo':
+                mensagem.textContent = 'Ow cara vc é o melhor professor do Senai pprt';
+                break;
                 case 'ruan':
                     mensagem.textContent = 'Aquele cara que não sabe português';
                     break;
@@ -28,7 +82,7 @@
                     mensagem.textContent = 'O primeiro e único KaiserBingus';
                     break;
                 default:
-                    mensagem.textContent = 'Nome não encontrado!';
+                    mensagem.textContent = 'Não coloquei seu nome ainda provavelmente... Foi mal.';
                     break;
             }
         }
